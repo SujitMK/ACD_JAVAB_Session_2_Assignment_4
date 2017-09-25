@@ -2,9 +2,9 @@ package schoolExamResultsPKG;
 
 public class TestDemo {
 	
-	public TestDemo(int marksInput)
+	public TestDemo(int marksInput)                                          // Constructor with an argument
 	{
-		if (marksInput == 0)
+		if (marksInput == 0)                                              // Checking the input values
 		{
 			System.out.println("You Have Entered Zero");
 		}
@@ -19,7 +19,7 @@ public class TestDemo {
 			System.out.println("You Have Entered Negative Value");
 		}
 		
-		char ascii = (char)marksInput;
+		char ascii = (char)marksInput;                                                  // Getting the ASCII for the input marks
 		System.out.println("The ASCII Value Of The Number You Entered Is: "+ ascii);
 	}
 }
