@@ -15,7 +15,7 @@ public class SchoolExamResults {
 		
 		System.out.println("Enter The Marks Obtained For Mathematics");
 		int mathMarks = input.nextInt();
-		TestDemo td = new TestDemo(mathMarks);
+		TestDemo td = new TestDemo(mathMarks);                              // Calling a TestDemo with an argument
 		
 		System.out.println();
 		System.out.println("Enter The Marks Obtained For Physics");
@@ -27,9 +27,11 @@ public class SchoolExamResults {
 		int cheMarks = input.nextInt();
 		td = new TestDemo(cheMarks);
 		
-		int avg = (mathMarks + phyMarks + cheMarks) / 3;
+		int avg = (mathMarks + phyMarks + cheMarks) / 3;                    // Calculating an Average of PCM
 		
 		System.out.println();
+		
+		 // Checking and Printing the grade based on the Average Marks
 		
 		if (avg > 70)
 		{
@@ -49,7 +51,7 @@ public class SchoolExamResults {
 			System.out.println("The Grade obtained by the candidate is       : C");
 		}
 		
-		input.close();
+		input.close();                                                       // Closing the scanner
 
 	}
 
